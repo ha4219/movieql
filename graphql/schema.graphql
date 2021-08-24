@@ -8,8 +8,7 @@ type Movie {
 }
 
 type Query{
-    movies: [Movie]!
-    movie(id: Int!): Movie
+    movies(limit: Int, rating: Float): [Movie]!
 }
 
 type Mutation {
