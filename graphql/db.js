@@ -32,16 +32,16 @@ let movies = [
 ];
 
 export const getId = id => {
-    const filteredPeople = peope.filter(person=>person.id === string(id));
-    return filteredPeople[0];
+    const fliteredMovies = movies.filter(movie => movie.id===id);
+    return fliteredMovies[0];
 };
 
 export const getMovies = () => movies;
 
 export const deleteMovie = id => {
-    const cleanedMovies = movies.filter(movie => movie.id !== string(id));
+    const cleanedMovies = movies.filter(movie => movie.id !== id);
     if(movies.length>cleanedMovies.length){
-        movie = cleanedMovies;
+        movies = cleanedMovies;
         return true;
     }else{
         return false;
